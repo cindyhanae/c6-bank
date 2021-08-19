@@ -1,5 +1,7 @@
-@mixin btn($border, $bg, $pad){
-    border: $border;
+@mixin btn($border-color, $bg, $pad){
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border-color;
     background-color: $bg;
     padding: 0 $pad;
     border-radius: 100px;
@@ -12,4 +14,19 @@
     font-weight: $weight;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    letter-spacing: 0.02em;
 } 
+
+@mixin flex($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin typography($color, $size, $weight, $height){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}

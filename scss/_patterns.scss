@@ -21,7 +21,7 @@ h2{
 
 h1{
     font-size: 4.8rem;
-    color: red;
+    color: $white
 }
 
 h2{
@@ -38,8 +38,16 @@ h4{
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 150%;
+    color: rgba(255, 255, 255, 0.7);
 }
 
+// GRID
+.container{
+    width: 100%;
+    max-width: 124.8rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
 
 // TITLES AND SUBTITLES
 .section_subtitle{
