@@ -1,0 +1,15 @@
+@mixin btn($border, $bg, $pad){
+    border: $border;
+    background-color: $bg;
+    padding: 0 $pad;
+    border-radius: 100px;
+}
+
+@mixin btn-anchor($color, $height, $font, $weight){
+    color: $color;
+    line-height: $height;
+    font-size: $font;
+    font-weight: $weight;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+} 

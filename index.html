@@ -14,25 +14,74 @@
     <title>C6Bank</title>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <h1>Olá</h1>
-    header -> nav inter 16px  500 line 19px
-            button montserrat 15px 500 line 18px
+    <header>
+        <div class="container">
+                <a href="#">
+                        <img src="./assets/logo-white.svg" alt="Logo C6 Bank">
+                </a>
+                <div class="nav">
+                        <ul>
+                        <li><a href="#">
+                                Para você
+                                <img src="./assets/dropdown.svg" alt="">
+                        </a></li>
+                        <li><a href="#">
+                                Para seu negócio
+                                <img src="./assets/dropdown.svg" alt="">
+                        </a></li>
+                        </ul>
 
-    hero -> span inter 13px 500 line 16px
-            p inter 15px 500 line 150%
-            h1 montserrat 48px 700 line 130%
-            h4 inter 18px 500 line 150%
-            button montserrat 15px 500 line 18px
+                        <button>
+                                <a href="#">Abra sua conta</a>
+                        </button>
+                </div>
+        </div>
+    </header>
 
-    section cards -> h2 montserrat 40px 700 line 130%
-                    span montserrat 28px 500 line 130%
-                    h3 montserrat 18px 500 line 150%
-                    p inter 16px 400 line 150%
+    <main>
+        <div class="container">
+                <!-- HERO -->
+                <section class="s_hero">
+                        <p><span>Novo</span>Conheça nosso Programa de Pontos Átomos</p>
+                        <h1>Um banco transparente, completo e com a sua cara</h1>
+                        <h4>Conta digital e cartão de crédito gratuitos. Saques e transferências sem tarifa.</h4>
+                        <button><a href="#">Nossos produtos</a></button>
+                </section>
+                <!-- CARDS -->
+                <section class="s_cards">
+                        <div class="s_cards_top">
+                                <div class="s_titles">
+                                       <h2>Uma banco completo</h2> 
+                                       <p class="section_subtitle">com produtos exclusivos</p>
+                                </div>
+                                <div class="toggle">
+                                        <button><a href="#">
+                                                Para você
+                                        </a></button>
+                                        <button><a href="#">
+                                                Para sua empresa
+                                        </a></button>
 
-    section banco completo -> button montserrat 16px 600 line 20px
-                            h3 montserrat 24px 600 line 130%
-                            p inter 16px 400 line 150%
-                            span inter 14px 500 line 150%
+                                </div>
+                        </div>
+
+                        <div class="s_cards_bottom">
+                                <div class="s_cards_bottom_txt">
+                                       <h3>Conta com cartão C6 Business</h3> 
+                                       <p>A conta MEI é completa e não tem tarifa de manutenção. Além disso, você pode ter um cartão de crédito sem anuidade.</p>
+                                       <div class="aproxime">
+                                               <img src="./assets/aproxime.svg" alt="Ícone de aproximação">
+                                               <span>Aproxime e pague</span>
+                                       </div>
+                                </div>
+                                <div class="s_cards_bottom_img">
+                                        <img src="./assets/card.svg" alt="Cartão">
+                                        <img src="./assets/celular.svg" alt="Celular">
+                                        <img src="./assets/business.svg" alt="Logo C6 Business">
+                                </div>
+                        </div>
+                </section>
+        </div>
+    </main>
 </body>
 </html>
