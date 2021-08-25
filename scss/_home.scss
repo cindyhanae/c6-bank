@@ -1,7 +1,7 @@
 .s_hero{
-    border: 1px solid red;
     width: 100%;
     max-width: 69.6rem;
+    padding-top: 7.2rem;
 
     p{
         @include typography(rgba(255, 255, 255, 0.7), 1.5rem, 500, 150%);
@@ -34,6 +34,67 @@
     }
 }
 
+// CARDS SECTION
 .s_cards{
+    @include flex(row, start, space-between);
+    gap: 12rem;
+    padding: 9.6rem 0 6.9rem;
+    position: relative;
+
+    .cards_txt{
+        width: 100%;
+        max-width: 62.5rem;
+   }
+}
+
+.s_info{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    
+    .info_benefits{
+        width: 100%;
+        max-width: 25.9rem;
+        margin-bottom: 6.8rem;
+
+        h4{
+            color: $black-brand;
+            margin: 1.6rem 0 0.8rem;
+            width: 100%;
+            max-width: 22.7rem;
+        }
+
+        p{
+            color: $gray-brand;
+            line-height: 150%;
+        }
+
+        .info_icon{
+            padding-bottom: 1.1rem;
+            position: relative;
+
+            &::after{
+                content: '';
+                width: 1.5rem;
+                height: 2px;
+                background-color: $yellow-brand;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+.cards_img{
+    position: absolute;
+    right: 0;
+    top: -7.4rem;
+}
+
+// COMPLETO SECTION
+.s_completo{
     
 }
