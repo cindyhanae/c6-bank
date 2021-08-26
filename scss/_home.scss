@@ -96,5 +96,53 @@
 
 // COMPLETO SECTION
 .s_completo{
-    
+    position: relative;
+    .gray_bg{
+        background-color: #FAFAFA;
+        width: 100vw;
+        height: 85rem;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 20.3rem;
+    }
+}
+
+.s_completo_top{
+    @include flex(row, center, space-between);
+    border: 1px solid red;
+    .toggle{
+        border: 1px solid rgba(196, 196, 196, 0.6);
+        border-radius: 12rem;
+        padding: 8px;
+        width: 100%;
+        max-width: 59.2rem;
+        height: 7.2rem;
+        display: flex;
+        gap: 14.6rem;
+        position: relative;
+
+        .slide_toggle{
+            background-color: $black-brand;
+            border-radius: 12rem;
+            width: 100%;
+            max-width: 26.9rem;
+            height: 5.6rem;
+            position: absolute;
+            top: 8px;
+            left: 1.1rem;
+            z-index: -1;
+        }
+            a{
+                @include typography($gray-brand, 1.6rem, 500, 2rem);
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+                display: flex;
+                align-items: center;
+                &:first-child{
+                    margin-left: 9.6rem;
+                }
+            }
+    }
 }
