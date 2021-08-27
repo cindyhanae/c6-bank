@@ -110,39 +110,88 @@
 
 .s_completo_top{
     @include flex(row, center, space-between);
-    border: 1px solid red;
+    margin-bottom: 8.7rem;
     .toggle{
         border: 1px solid rgba(196, 196, 196, 0.6);
         border-radius: 12rem;
-        padding: 8px;
         width: 100%;
         max-width: 59.2rem;
         height: 7.2rem;
         display: flex;
         gap: 14.6rem;
         position: relative;
-
-        .slide_toggle{
-            background-color: $black-brand;
-            border-radius: 12rem;
-            width: 100%;
-            max-width: 26.9rem;
-            height: 5.6rem;
-            position: absolute;
-            top: 8px;
-            left: 1.1rem;
-            z-index: -1;
-        }
-            a{
-                @include typography($gray-brand, 1.6rem, 500, 2rem);
-                font-family: 'Montserrat', sans-serif;
-                text-transform: uppercase;
-                letter-spacing: 0.02em;
-                display: flex;
-                align-items: center;
-                &:first-child{
-                    margin-left: 9.6rem;
+        
+        a{
+            @include typography($gray-brand, 1.6rem, 500, 2rem);
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            display: flex;
+            align-items: center;
+            &:first-child{
+                margin-left: 9.6rem;
+                &::before{
+                    content: '';
+                    background-color: $black-brand;
+                    border-radius: 12rem;
+                    width: 100%;
+                    max-width: 26.9rem;
+                    height: 5.6rem;
+                    position: absolute;
+                    z-index: -1;
+                    top: 8px;
+                    left: 1.1rem;
+                    
                 }
             }
+        }
+    }
+}
+
+.s_completo_bottom{
+    background: rgb(0,0,0);
+    background: linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 120%);
+    height: 42.4rem;
+    border-radius: 1.5rem;
+    @include flex(row, none, space-between)
+}
+
+.s_completo_bottom_txt{
+    margin: 9.7rem 0 10.6rem 10.3rem;
+    h3{
+        color: $white;
+        letter-spacing: -0.03em;
+        margin-bottom: 1.6rem;
+        width: 100%;
+        max-width: 21rem;
+    }
+    p{
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 150%;
+        width: 100%;
+        max-width: 34.1rem;
+        margin-bottom: 4.4rem;
+    }
+    .aproxime{
+        @include flex(row, center, none)
+        gap: 1.6rem;
+
+        span{
+            @include typography(#fafafa, 1.4rem, 500, 150%)
+        }
+    }
+}
+
+.s_completo_bottom_img{
+    position: relative;
+    width: 100%;
+    border: 1px solid red;
+    .black-card{
+        position: absolute;
+        top: -8rem;
+        border: 1px solid red;
+    }
+    .iphone{
+        position: absolute;
     }
 }
