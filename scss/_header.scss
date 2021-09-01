@@ -1,8 +1,9 @@
 .bg{
     background: url(../assets/hero-img.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 70rem;
+    background-size: cover;
+    background-position: left;
+    // height: 70rem;
 }
 
 header{
@@ -17,9 +18,17 @@ header{
         height: inherit;
     }
 
+    .logo{
+        width: 100%;
+        max-width: 12rem;
+        border: 1px solid red;
+    }
+
     .nav{
         @include flex(row, center, space-between);
-        gap: 36.1rem;
+        // gap: 36.1rem;
+        width: 100%;
+        max-width: 89.6rem;
 
         ul{
             @include flex(row, center, space-between);
@@ -38,6 +47,19 @@ header{
 
             a{
                 @include btn-anchor($black-brand, 4rem, 1.5rem, 500);
+            }
+        }
+    }
+
+    @include responsive(950px){
+        .nav{
+            justify-content: flex-end;
+            ul{
+                display: none;
+            }
+            .btn{
+                width: 17.1rem;
+                padding: 0 1.4rem;
             }
         }
     }

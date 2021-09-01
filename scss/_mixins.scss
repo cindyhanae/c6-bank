@@ -30,3 +30,9 @@
     font-weight: $weight;
     line-height: $height;
 }
+
+@mixin responsive($max-width){
+@media (max-width: $max-width) {
+        @content;
+    }
+}

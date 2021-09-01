@@ -1,7 +1,8 @@
 .s_hero{
     width: 100%;
     max-width: 69.6rem;
-    padding-top: 7.2rem;
+    padding: 7.2rem 0 16.2rem 0;
+    border: 1px solid red;
 
     p{
         @include typography(rgba(255, 255, 255, 0.7), 1.5rem, 500, 150%);
@@ -30,6 +31,31 @@
         
         a{
             @include btn-anchor($white, 4.8rem, 1.5rem, 500);
+        }
+    }
+
+    @include responsive(900px){
+        @include flex(column, center, none);
+        text-align: center;
+
+        h4{
+            max-width: 60rem;
+        }
+    }
+
+    @include responsive(600px){
+        padding: 16rem 0 10rem 0;
+        p{
+            margin: 0 0 1.2rem 0;
+        }
+
+        span{
+            display: none;
+        }
+
+        h4{
+            max-width: 40rem;
+            margin-top: 1.6rem;
         }
     }
 }
