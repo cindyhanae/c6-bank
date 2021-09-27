@@ -2,8 +2,11 @@
     background: url(../assets/hero-img.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: 72%;
     // height: 70rem;
+    @include responsive(900px){
+        background-position: left;
+    }
 }
 
 header{

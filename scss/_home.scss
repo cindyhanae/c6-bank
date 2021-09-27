@@ -34,30 +34,37 @@
         }
     }
 
-    // @include responsive(900px){
-    //     @include flex(column, center, none);
-    //     text-align: center;
-
-    //     h4{
-    //         max-width: 60rem;
-    //     }
+    // @include responsive(1050px){
+    //     max-width: 60rem;
     // }
 
-    // @include responsive(600px){
-    //     padding: 16rem 0 10rem 0;
-    //     p{
-    //         margin: 0 0 1.2rem 0;
-    //     }
+    @include responsive(900px){
+        max-width: 65rem;
+        margin: auto;
+        @include flex(column, center, center);
+        text-align: center;
 
-    //     span{
-    //         display: none;
-    //     }
+        h4{
+            max-width: 60rem;
+        }
+    }
 
-    //     h4{
-    //         max-width: 40rem;
-    //         margin-top: 1.6rem;
-    //     }
-    // }
+    @include responsive(600px){
+        padding: 16rem 0 10rem 0;
+        
+        p{
+            margin: 0 0 1.2rem 0;
+        }
+
+        span{
+            display: none;
+        }
+
+        h4{
+            max-width: 40rem;
+            margin-top: 1.6rem;
+        }
+    }
 }
 
 // CARDS SECTION
