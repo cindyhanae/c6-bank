@@ -2,7 +2,6 @@
     width: 100%;
     max-width: 69.6rem;
     padding: 7.2rem 0 16.2rem 0;
-    border: 1px solid red;
 
     p{
         @include typography(rgba(255, 255, 255, 0.7), 1.5rem, 500, 150%);
@@ -73,11 +72,34 @@
     gap: 12rem;
     padding: 9.6rem 0 6.9rem;
     position: relative;
+    width: 100%;
+    border: 1px solid green;
 
     .cards_txt{
         width: 100%;
         max-width: 62.5rem;
-   }
+
+        @include responsive(1040px){
+            max-width: 100%;
+        }
+
+        @include responsive(760px){
+            .s_titles{
+                text-align: center;
+            }
+        }
+        @include responsive(400px){
+            .s_titles{
+                p{
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+
+    @include responsive(400px){
+        padding: 8rem 0 0;
+    }
 }
 
 .s_info{
@@ -118,6 +140,40 @@
                 left: 0;
             }
         }
+
+        @include responsive(1040px){
+            max-width: 32rem;
+            margin-bottom: 10rem;
+        }
+
+        @include responsive(760px){
+            h4{
+                margin: auto;
+                margin-top: 1.6rem;
+            }
+
+            .info_icon{
+                &::after{
+                    left: 15rem;
+                }
+            }
+        }
+    }
+
+    @include responsive(760px){
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include responsive(400px){
+        margin-top: 6.4rem;
+        .info_benefits{
+            margin-bottom: 6.4rem;
+            :not(:last-child){
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -125,6 +181,21 @@
     position: absolute;
     right: 0;
     top: -7.4rem;
+
+    .cards{
+        width: 100%;
+        max-width: 46rem;
+        border: 1px solid green;
+    }
+    
+    @include responsive(1150px){
+        max-width: 35rem;
+        top: 11rem;
+    }
+
+    @include responsive(1040px){
+        display: none;
+    }
 }
 
 // COMPLETO SECTION
