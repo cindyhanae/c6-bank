@@ -19,9 +19,8 @@ header{
     }
 
     .logo{
-        width: 100%;
-        max-width: 12rem;
-        border: 1px solid red;
+        // width: 100%;
+        min-width: 12rem;
     }
 
     .nav{
@@ -52,8 +51,14 @@ header{
     }
 
     @include responsive(950px){
+        height: 8.8rem;
+        border: 1px solid red;
+        .container{
+            gap: 0;
+        }
         .nav{
             justify-content: flex-end;
+
             ul{
                 display: none;
             }
