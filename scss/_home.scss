@@ -219,8 +219,20 @@
         max-width: 59.2rem;
         height: 7.2rem;
         display: flex;
-        gap: 14.6rem;
+        cursor: pointer;
+        // gap: 14.6rem;
         position: relative;
+        &::before{
+            content: '';
+            background-color: $black-brand;
+            border-radius: 12rem;
+            width: 50%;
+            height: 5.6rem;
+            position: absolute;
+            z-index: -1;
+            top: 0.8rem;
+            left: 1.1rem;
+        }
         
         a{
             @include typography($gray-brand, 1.6rem, 500, 2rem);
@@ -229,24 +241,33 @@
             letter-spacing: 0.02em;
             display: flex;
             align-items: center;
-            &:first-child{
-                margin-left: 9.6rem;
-                &::before{
-                    content: '';
-                    background-color: $black-brand;
-                    border-radius: 12rem;
-                    width: 100%;
-                    max-width: 26.9rem;
-                    height: 5.6rem;
-                    position: absolute;
-                    z-index: -1;
-                    top: 8px;
-                    left: 1.1rem;
-                    
-                }
-            }
+            // &:first-child{
+            //     margin-left: 9.6rem;
+            //     &::before{
+            //         content: '';
+            //         background-color: $black-brand;
+            //         border-radius: 12rem;
+            //         width: 100%;
+            //         max-width: 26.9rem;
+            //         height: 5.6rem;
+            //         position: absolute;
+            //         z-index: -1;
+            //         top: 8px;
+            //         left: 1.1rem;
+            //     }
+            // }
         }
     }
+
+    // @include responsive(1150px){
+    //     .toggle{
+    //         max-width: 50rem;
+
+    //         a{
+    //             border: 1px solid red;
+    //         }
+    //     }
+    // }
 }
 
 .s_completo_bottom{
