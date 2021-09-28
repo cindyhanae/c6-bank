@@ -73,7 +73,6 @@
     padding: 9.6rem 0 6.9rem;
     position: relative;
     width: 100%;
-    border: 1px solid green;
 
     .cards_txt{
         width: 100%;
@@ -97,7 +96,7 @@
         }
     }
 
-    @include responsive(400px){
+    @include responsive(760px){
         padding: 8rem 0 0;
     }
 }
@@ -164,9 +163,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    @include responsive(400px){
         margin-top: 6.4rem;
         .info_benefits{
             margin-bottom: 6.4rem;
@@ -185,7 +181,6 @@
     .cards{
         width: 100%;
         max-width: 46rem;
-        border: 1px solid green;
     }
     
     @include responsive(1150px){
