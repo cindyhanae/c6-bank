@@ -87,13 +87,6 @@
                 text-align: center;
             }
         }
-        @include responsive(400px){
-            .s_titles{
-                p{
-                    font-size: 2.4rem;
-                }
-            }
-        }
     }
 
     @include responsive(760px){
@@ -197,6 +190,7 @@
 .s_completo{
     position: relative;
     padding-top: 14.5rem;
+    margin-bottom: 2rem;
     .gray_bg{
         background-color: #FAFAFA;
         width: 100vw;
@@ -206,12 +200,20 @@
         top: 0;
         left: 20.3rem;
     }
+    
+    @include responsive(400px){
+        padding-top: 6.4rem;
+    }
 }
 
 .s_completo_top{
     @include flex(row, center, space-between);
     margin-bottom: 8.7rem;
-    
+    .s_titles{
+        width: 100%;
+        max-width: 45.6rem;
+        margin-right: 2.4rem;
+    }
     .toggle{
         border: 1px solid rgba(196, 196, 196, 0.6);
         border-radius: 12rem;
@@ -226,7 +228,7 @@
             content: '';
             background-color: $black-brand;
             border-radius: 12rem;
-            width: 50%;
+            width: 45%;
             height: 5.6rem;
             position: absolute;
             z-index: -1;
@@ -236,46 +238,57 @@
         
         a{
             @include typography($gray-brand, 1.6rem, 500, 2rem);
+            @include flex(row, center, center);
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
             letter-spacing: 0.02em;
-            display: flex;
-            align-items: center;
-            // &:first-child{
-            //     margin-left: 9.6rem;
-            //     &::before{
-            //         content: '';
-            //         background-color: $black-brand;
-            //         border-radius: 12rem;
-            //         width: 100%;
-            //         max-width: 26.9rem;
-            //         height: 5.6rem;
-            //         position: absolute;
-            //         z-index: -1;
-            //         top: 8px;
-            //         left: 1.1rem;
-            //     }
-            // }
+            flex-wrap: wrap;
+            width: 50%;
         }
     }
 
-    // @include responsive(1150px){
-    //     .toggle{
-    //         max-width: 50rem;
+    @include responsive(1050px){
+        .toggle{
+            a{
+                font-size: 1.4rem;
+            }
+        }
+    }
 
-    //         a{
-    //             border: 1px solid red;
-    //         }
-    //     }
-    // }
+    @include responsive(900px){
+        flex-direction: column;
+        .s_titles{
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+    }
+
+    @include responsive(400px){
+        .s_titles{
+            p{
+                font-size: 2.4rem;  
+            }
+        }
+        .toggle{
+            margin-bottom: 4.8rem;
+        }
+    }
 }
 
 .s_completo_bottom{
     background: rgb(0,0,0);
     background: linear-gradient(75deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 120%);
+    @include flex(row, none, space-between);
     height: 42.4rem;
+    width: 100%;
     border-radius: 1.5rem;
-    @include flex(row, none, space-between)
+
+    @include responsive(1010px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 63.2rem;
+    }
 }
 
 .s_completo_bottom_txt{
@@ -302,26 +315,72 @@
             @include typography(#fafafa, 1.4rem, 500, 150%)
         }
     }
+
+    @include responsive(1010px){
+        margin: 6.4rem auto 0;
+        padding: 0 1.6rem;
+        text-align: center;
+        width: 100%;
+        max-width: 50rem;
+
+        h3{
+            margin: auto;
+        }
+        p{
+            margin: 2rem auto 4rem;
+        }
+
+        .aproxime{
+            justify-content: center;
+        }
+    }
 }
 
 .s_completo_bottom_img{
     position: relative;
-    width: 50%;
-    border: 1px solid red;
+    width: 100%;
+    max-width: 51.9rem;
     .black-card{
         position: absolute;
         top: -8rem;
-        left: -7.3rem;
+        right: 19.7rem;
         z-index: 1;
     }
     .iphone{
         position: absolute;
         bottom: 0;
-        left: -2.4rem;
+        left: -10.4rem;
     }
     .img-logo{
         position: absolute;
         right: 7.2rem;
         bottom: 5.3rem;
+    }
+
+    @include responsive(1010px){
+        max-width: 36.8rem;
+        .black-card{
+            top: -2rem;
+            left: -6.3rem;
+        }
+        .iphone{
+            top: 8.7rem;
+            left: 0;
+        }
+        .img-logo{
+            display: none;
+        }
+    }
+
+    @include responsive(500px){
+        max-width: 26rem;
+        .black-card{
+            top: 3rem;
+            left: -3.3rem;
+        }
+        .iphone{
+            top: 13.8rem;
+            left: 0;
+        }
     }
 }

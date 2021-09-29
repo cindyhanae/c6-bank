@@ -64,4 +64,8 @@ h4{
     font-weight: 500;
     line-height: 130%;
     font-family: 'Montserrat', sans-serif;
+    @include responsive(400px){
+        margin-top: 0.4rem;
+        font-size: 2.4rem;
+    }
 }
