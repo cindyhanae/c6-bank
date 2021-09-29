@@ -75,7 +75,7 @@
     @include flex(row, start, space-between);
     gap: 12rem;
     padding: 9.6rem 0 6.9rem;
-    position: relative;
+    // position: relative;
     width: 100%;
 
     .cards_txt{
@@ -171,18 +171,15 @@
 }
 
 .cards_img{
-    position: absolute;
-    right: 0;
-    top: -7.4rem;
+//    position: relative;
 
     .cards{
+        margin-top: -33%;
+        // position: absolute;
+        // right: 0;
+        // top: -7.4rem;
         width: 100%;
         max-width: 46rem;
-    }
-    
-    @include responsive(1150px){
-        max-width: 35rem;
-        top: 11rem;
     }
 
     @include responsive(1040px){
@@ -379,9 +376,16 @@
     @include responsive(500px){
         max-width: 26rem;
         .black-card{
-            top: 3rem;
+            top: 7rem;
             left: -3.3rem;
         }
+        .iphone{
+            top: 16.1rem;
+            left: 0;
+        }
+    }
+
+    @include responsive(400px){
         .iphone{
             top: 13.8rem;
             left: 0;
