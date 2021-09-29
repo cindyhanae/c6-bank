@@ -50,6 +50,13 @@ header{
             a{
                 @include btn-anchor($black-brand, 4rem, 1.5rem, 500);
             }
+
+            &:hover{
+                background-color: transparent;
+                a{
+                    color: $gray-brand;
+                }
+            }
         }
     }
 

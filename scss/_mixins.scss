@@ -5,6 +5,7 @@
     background-color: $bg;
     padding: 0 $pad;
     border-radius: 100px;
+    transition: all .3s ease-in;
 }
 
 @mixin btn-anchor($color, $height, $font, $weight){

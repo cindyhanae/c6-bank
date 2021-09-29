@@ -31,11 +31,15 @@
         a{
             @include btn-anchor($white, 4.8rem, 1.5rem, 500);
         }
-    }
 
-    // @include responsive(1050px){
-    //     max-width: 60rem;
-    // }
+        &:hover{
+            background-color: $yellow-brand;
+            border-color: $yellow-brand;
+            a{
+                color: $black-brand;
+            }
+        }
+    }
 
     @include responsive(900px){
         max-width: 65rem;
