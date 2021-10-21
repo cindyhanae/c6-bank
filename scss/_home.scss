@@ -202,7 +202,12 @@
         top: 0;
         left: 20.3rem;
     }
-    
+    @include responsive(900px){
+        .gray_bg{
+            display: none;
+        }
+    }
+
     @include responsive(400px){
         padding-top: 6.4rem;
     }
