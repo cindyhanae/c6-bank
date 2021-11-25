@@ -18,7 +18,6 @@ const btnToggle = document.querySelector('.js-toggle')
 
 function slideBtn(event){
     event.preventDefault()
-
     btnToggle.classList.toggle('slide')
 }
 

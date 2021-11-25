@@ -247,17 +247,18 @@
                 left: 31.1rem;
             }
         }
-        
-        a{
-            @include typography($gray-brand, 1.6rem, 400, 2rem);
-            @include flex(row, center, center);
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-            flex-wrap: wrap;
-            width: 50%;
-        }
     }
+    a{
+        @include typography($gray-brand, 1.6rem, 400, 2rem);
+        @include flex(row, center, center);
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    
+
 
     @include responsive(1050px){
         .toggle{
